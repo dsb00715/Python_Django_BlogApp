@@ -1,6 +1,7 @@
 {% extends "blog/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
+  <h2>Hello, {{ user.first_name}}</h2>
   <div class="content-section">
     <div class="media">
       <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
